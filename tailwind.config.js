@@ -12,6 +12,24 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        calibre: ['var(--font-calibre)',"ui-sans-serif",
+        "system-ui",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji"]
+      },
+      animation: {
+        'loop-scroll': 'loop-scroll 40s linear infinite',
+      },
+      keyframes: {
+        'loop-scroll': {
+          from : {transform : "translateX(0)"},
+          to : {transform : "translateX(-100%)"},
+        },
+      },
     },
   },
   plugins: [],
