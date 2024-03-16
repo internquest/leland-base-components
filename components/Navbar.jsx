@@ -25,15 +25,15 @@ const Navbar = ({isOpen,setIsOpen}) => {
   };
 
   return (
-    <div class="fixed inset-x-0 z-50 top-0 flex flex-col-reverse font-calibre">
-      <nav class="relative -z-40 flex h-20 flex-col items-center justify-between border-b border-[#e5e5e5] bg-[#fff] p-4 sm:h-20 sm:flex-row sm:px-6 sm:py-0">
-        <div class="flex w-full items-center justify-between sm:h-full">
-          <button class="p-3 sm:hidden" onClick={toggleMenu}>
+    <div className="fixed inset-x-0 z-50 top-0 flex flex-col-reverse font-calibre">
+      <nav className="relative -z-40 flex h-20 flex-col items-center justify-between border-b border-[#e5e5e5] bg-[#fff] p-4 sm:h-20 sm:flex-row sm:px-6 sm:py-0">
+        <div className="flex w-full items-center justify-between sm:h-full">
+          <button className="p-3 sm:hidden" onClick={toggleMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              class="size-6 text-[#333]"
+              className="size-6 text-[#333]"
             >
               <path
                 stroke="currentColor"
@@ -45,13 +45,13 @@ const Navbar = ({isOpen,setIsOpen}) => {
               ></path>
             </svg>
           </button>
-          <div class="flex w-full items-center justify-center space-x-6 justify-self-center sm:max-w-2xl sm:justify-start">
+          <div className="flex w-full items-center justify-center space-x-6 justify-self-center sm:max-w-2xl sm:justify-start">
             <a href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 99 23"
-                class="h-6 shrink-0 text-[#15b078]"
+                className="h-6 shrink-0 text-[#15b078]"
               >
                 <path
                   fill="currentColor"
@@ -75,35 +75,33 @@ const Navbar = ({isOpen,setIsOpen}) => {
               </svg>
             </a>
           </div>
-          <div class="flex h-full shrink-0 items-center justify-end space-x-6 whitespace-nowrap text-lg text-[#333]">
+          <div className="flex h-full shrink-0 items-center justify-end space-x-6 whitespace-nowrap text-lg text-[#333]">
             <a
-              class="relative hidden sm:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md  p-3 hover:bg-[#f5f5f5] active:bg-[#f5f5f5] font-medium"
+              className="relative hidden sm:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md  p-3 hover:bg-[#f5f5f5] active:bg-[#f5f5f5] font-medium"
               role="menuitem"
-              href="/events"
             >
-              <div class="flex items-center gap-3 whitespace-nowrap">
+              <div className="flex items-center gap-3 whitespace-nowrap">
                 <span>Free events</span>
               </div>
             </a>
             <a
-              class="relative hidden sm:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 hover:bg-[#f5f5f5] active:bg-[#f5f5f5] font-medium"
+              className="relative hidden sm:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 hover:bg-[#f5f5f5] active:bg-[#f5f5f5] font-medium"
               role="menuitem"
-              href="/become-a-coach"
             >
-              <div class="flex items-center gap-3 whitespace-nowrap">
+              <div className="flex items-center gap-3 whitespace-nowrap">
                 <span>Become a coach</span>
               </div>
             </a>
-            <div class="flex h-full shrink-0 items-center space-x-3">
-              <a class="relative sm:hidden flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 hover:bg-[#f5f5f5] active:bg-[#f5f5f5] font-medium" role="menuitem">
-                <div class="flex items-center gap-3 whitespace-nowrap">
+            <div className="flex h-full shrink-0 items-center space-x-3">
+              <a className="relative sm:hidden flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 hover:bg-[#f5f5f5] active:bg-[#f5f5f5] font-medium" role="menuitem">
+                <div className="flex items-center gap-3 whitespace-nowrap">
                   <span>Join</span>
                   </div>
               </a>
-              <a className="sm:block hidden" href="/login">
+              <a className="sm:block hidden">
                 <button
                   type="button"
-                  class="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-[#333] bg-white border-[#f5f5f5] hover:bg-[#f5f5f5] shadow-transparent p-3 text-base space-x-2 inline-flex font-medium rounded-lg cursor-pointer"
+                  className="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-[#333] bg-white border-[#f5f5f5] hover:bg-[#f5f5f5] shadow-transparent p-3 text-base space-x-2 inline-flex font-medium rounded-lg cursor-pointer"
                   aria-label="Log In"
                 >
                   <span>Log In</span>
@@ -112,7 +110,7 @@ const Navbar = ({isOpen,setIsOpen}) => {
               <a className="sm:block hidden">
                 <button
                   type="button"
-                  class="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-white bg-[#15b078] border-[#15b078] hover:bg-[#15c385] hover:border-[#15c385]-hover shadow-transparent p-3 text-base space-x-2 inline-flex font-medium rounded-lg cursor-pointer"
+                  className="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-white bg-[#15b078] border-[#15b078] hover:bg-[#15c385] hover:border-[#15c385]-hover shadow-transparent p-3 text-base space-x-2 inline-flex font-medium rounded-lg cursor-pointer"
                   aria-label="Get Started"
                 >
                   <span>Get Started</span>
@@ -126,24 +124,24 @@ const Navbar = ({isOpen,setIsOpen}) => {
         className={` ${isOpen ? "block" : "hidden"} fixed inset-0 -z-10 bg-black bg-opacity-40`} 
         onClick={() => setIsOpen(false)}>
       </button>
-      <div ref={sidebarRef} class={`fixed inset-y-0 z-40 left-0  bg-[#f5f5f5] transition-transform duration-300  ${isOpen ? "translate-x-0" : "-translate-x-full"}  flex w-3/4 border-#f5f5f5 `}>
-        <div class="flex w-full flex-col bg-[#f5f5f5]">
-          <div class="flex flex-col items-start border-b border-[#e5e5e5] bg-[#fff] px-6 py-10">
-            <a href="https://www.joinleland.com/signup">
+      <div ref={sidebarRef} className={`fixed inset-y-0 z-40 left-0  bg-[#f5f5f5] transition-transform duration-300  ${isOpen ? "translate-x-0" : "-translate-x-full"}  flex w-3/4 border-#f5f5f5 `}>
+        <div className="flex w-full flex-col bg-[#f5f5f5]">
+          <div className="flex flex-col items-start border-b border-[#e5e5e5] bg-[#fff] px-6 py-10">
+            <a>
               <button
                 type="button"
-                class="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-white bg-[#15b078] border-[#15b078] hover:bg-[#15c385] hover:border-[#15c385] shadow-transparent p-3 text-base space-x-2 inline-flex font-medium rounded-lg cursor-pointer"
+                className="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-white bg-[#15b078] border-[#15b078] hover:bg-[#15c385] hover:border-[#15c385] shadow-transparent p-3 text-base space-x-2 inline-flex font-medium rounded-lg cursor-pointer"
                 aria-label="Get Started"
               >
                 <span>Get Started</span>
               </button>
             </a>
-            <div class="mt-10 flex w-full flex-col items-start gap-6">
-              <a class="text-2xl" href="/login">
+            <div className="mt-10 flex w-full flex-col items-start gap-6">
+              <a className="text-2xl">
                 Sign in
               </a>
               <button
-                class="flex w-full items-center justify-between text-2xl"
+                className="flex w-full items-center justify-between text-2xl"
                 type="button"
               >
                 <span>Browse Coaching</span>
@@ -151,7 +149,7 @@ const Navbar = ({isOpen,setIsOpen}) => {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  class="size-6"
+                  className="size-6"
                 >
                   <path
                     stroke="currentColor"
@@ -164,25 +162,25 @@ const Navbar = ({isOpen,setIsOpen}) => {
                 </svg>
               </button>
               <a
-                class="text-[#333] font-normal text-2xl"
+                className="text-[#333] font-normal text-2xl"
               >
                 Free events
               </a>
             </div>
           </div>
-          <div class="flex flex-col gap-4 p-6">
+          <div className="flex flex-col gap-4 p-6">
             <a
-              class="font-normal text-lg text-[#707070]"
+              className="font-normal text-lg text-[#707070]"
             >
               Home
             </a>
             <a
-              class=" font-normal text-lg text-[#707070]"
+              className=" font-normal text-lg text-[#707070]"
             >
               Become a coach
             </a>
             <a
-              class=" font-normal text-lg text-[#707070]"
+              className=" font-normal text-lg text-[#707070]"
             >
               Support
             </a>

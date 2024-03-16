@@ -2,11 +2,11 @@ import React from "react";
 
 const LandingBanner = () => {
   return (
-    <section class="mt-4 flex flex-wrap items-center justify-center gap-6 bg-[#000000] px-6 py-8 text-white sm:gap-14">
-      <span class="text-lg font-medium">Featured in</span>
+    <section className="mt-4 flex flex-wrap items-center justify-center gap-6 bg-[#000000] px-6 py-8 text-white sm:gap-14">
+      <span className="text-lg font-medium">Featured in</span>
       <a
-        class="transition-opacity duration-200 ease-in-out hover:opacity-70"
-        href="https://www.forbes.com/sites/rodberger/2022/05/23/democratizing-the-college-admissions-process-is-big-business/?sh=26db187369c9"
+        className="transition-opacity duration-200 ease-in-out hover:opacity-70"
+        
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -30,8 +30,8 @@ const LandingBanner = () => {
         </svg>
       </a>
       <a
-        class="transition-opacity duration-200 ease-in-out hover:opacity-70"
-        href="https://www.businessinsider.com/most-promising-edtech-startups-2023-vc-2023-9"
+        className="transition-opacity duration-200 ease-in-out hover:opacity-70"
+        
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -57,8 +57,8 @@ const LandingBanner = () => {
         </svg>
       </a>
       <a
-        class="transition-opacity duration-200 ease-in-out hover:opacity-70"
-        href="https://techcrunch.com/2022/05/11/leland-coaching-seed-round/#!"
+        className="transition-opacity duration-200 ease-in-out hover:opacity-70"
+        
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -80,8 +80,8 @@ const LandingBanner = () => {
         </svg>
       </a>
       <a
-        class="transition-opacity duration-200 ease-in-out hover:opacity-70"
-        href="https://www.protocol.com/workplace/expanding-executive-coaching"
+        className="transition-opacity duration-200 ease-in-out hover:opacity-70"
+        
         target="_blank"
         rel="noopener noreferrer"
       >
